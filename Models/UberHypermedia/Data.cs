@@ -23,6 +23,9 @@ namespace UberHypermedia_CSharp_Neo4J.Models.UberHypermedia
         [DataMember(Name = "id")]
         public string Id { get; set; }
 
+        [DataMember(Name = "name")]
+        public string Name { get; set; }
+
         [DataMember(Name = "rel")]
         public IList<string> Rel { get; set; }
 
@@ -42,11 +45,17 @@ namespace UberHypermedia_CSharp_Neo4J.Models.UberHypermedia
         [DataMember(Name = "sending")]
         public IList<string> Sending { get; set; }
 
-        [DataMember(Name = "receiving")]
+        [DataMember(Name = "accepting")]
         public IList<string> Receiving { get; set; }
 
         //need to add validation
         [DataMember(Name = "value")]
         public object Value { get; set; }
+
+        [DataMember(Name = "label")]
+        public object Label { get; set; }
+
+        [DataMember(Name = "templated")]
+        public object Templated { get; set; }
     }
 }
