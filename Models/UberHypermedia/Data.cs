@@ -8,17 +8,9 @@ namespace UberHypermedia_CSharp_Neo4J.Models.UberHypermedia
     [DataContract]
     public class Data : ExtensibleObject
     {
-        public Data()
-        {
-            Children = new List<Data>();
-            Rel = new List<string>();
-            Sending = new List<string>();
-            Receiving = new List<string>();
-
-        }
 
         [DataMember(Name = "data")]
-        public IList<Data> Children { get; set; }
+        public List<Data> Children { get; set; }
 
         [DataMember(Name = "id")]
         public string Id { get; set; }
@@ -27,7 +19,7 @@ namespace UberHypermedia_CSharp_Neo4J.Models.UberHypermedia
         public string Name { get; set; }
 
         [DataMember(Name = "rel")]
-        public IList<string> Rel { get; set; }
+        public List<string> Rel { get; set; }
 
         [DataMember(Name = "url")]
         public Uri Url { get; set; }
@@ -36,26 +28,26 @@ namespace UberHypermedia_CSharp_Neo4J.Models.UberHypermedia
         public string Action { get; set; }
 
         [DataMember(Name = "transclude")]
-        public bool Transclude { get; set; }
+        public string Transclude { get; set; }
 
         //need to add validation
         [DataMember(Name = "model")]
         public string Model { get; set; }
 
         [DataMember(Name = "sending")]
-        public IList<string> Sending { get; set; }
+        public List<string> Sending { get; set; }
 
         [DataMember(Name = "accepting")]
-        public IList<string> Receiving { get; set; }
+        public List<string> Receiving { get; set; }
 
         //need to add validation
         [DataMember(Name = "value")]
         public object Value { get; set; }
 
         [DataMember(Name = "label")]
-        public object Label { get; set; }
+        public string Label { get; set; }
 
         [DataMember(Name = "templated")]
-        public object Templated { get; set; }
+        public string Templated { get; set; }
     }
 }

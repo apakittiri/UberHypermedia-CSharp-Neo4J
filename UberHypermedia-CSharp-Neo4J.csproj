@@ -174,11 +174,14 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\WorkerBranch.cs" />
+    <Compile Include="Models\WorkerSkill.cs" />
     <Compile Include="Models\UberHypermedia\Actions.cs" />
     <Compile Include="Models\UberHypermedia\Data.cs" />
     <Compile Include="Models\UberHypermedia\Error.cs" />
     <Compile Include="Models\UberHypermedia\IUberDocument.cs" />
     <Compile Include="Models\UberHypermedia\UberDocument.cs" />
+    <Compile Include="Models\Worker.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

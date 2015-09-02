@@ -11,7 +11,7 @@ namespace UberHypermedia_CSharp_Neo4J.Models.UberHypermedia
         public string Version { get; set; }
 
         [DataMember(Name = "data")]
-        public IList<Data> Data { get; set; }
+        public List<Data> Data { get; set; }
 
         [DataMember(Name = "error")]
         public Error Error { get; set; }
